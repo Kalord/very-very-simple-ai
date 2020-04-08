@@ -17,7 +17,7 @@ private:
      **/
     std::vector<float> weights;
 public:
-    Layout(std::vector<float> weights);
+    Layer(std::vector<float> weights);
     /**
      * Вычисление значений слоя
      **/

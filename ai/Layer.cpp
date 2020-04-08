@@ -1,6 +1,6 @@
 #incude "Layer.hpp"
 
-Layer::Layout(std::vector<float> weights) : weights(weights), neuronQuantity(weights.size())
+Layer::Layer(std::vector<float> weights) : weights(weights), neuronQuantity(weights.size())
 {
 
 }
