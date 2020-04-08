@@ -1,6 +1,6 @@
 #include "NeuralNetwork.hpp"
 
-NeuralNetwork(std::vector<Layer> layers, ActivationFunction activationFunction) :
+NeuralNetwork::NeuralNetwork(std::vector<Layer> layers, ActivationFunction activationFunction) :
 layers(layers), quantityLayers(layers.size()), activationFunction(activationFunction)
 {
 
@@ -16,6 +16,6 @@ bool NeuralNetwork::run(std::vector<float> coefficients)
         coefficients = this->layers[i].calculate(coefficients);
     }
 
-    float result = math::Vector::sum<float>(coefficients);
-    return this->activationFunction(result);
+    float result = math::Vector<float>::sum(coefficients);
+    return this->activationFunction.check(result);
 }

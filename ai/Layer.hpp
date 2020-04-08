@@ -2,6 +2,8 @@
 
 #include <vector>
 
+#include "../math/Vector.hpp"
+
 /**
  * Слой нейронной сети
  **/
