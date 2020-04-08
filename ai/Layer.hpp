@@ -19,7 +19,7 @@ private:
 public:
     Layout(std::vector<float> weights);
     /**
-     * Вычисление значения слоя
+     * Вычисление значений слоя
      **/
     std::vector<float> calculate(std::vector<float> coefficients);
 };
